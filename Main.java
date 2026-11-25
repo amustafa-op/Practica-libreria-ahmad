@@ -24,12 +24,12 @@ public class Main {
                         modificarLlibre(tui, ctrl);
                         break;
                     case "4":
-                        tui.mostrarMissatge("Opció no implementada.");
+                        tui.mostrarMissatge("Opció no implementada de momen.");
                         break;
                     case "5":
 
 
-                        tui.mostrarMissatge("Fins aviat!");
+                        tui.mostrarMissatge("Fins araa!!");
                         break;
                     default:
                         tui.mostrarMissatge("Opcio invalida.");
@@ -58,20 +58,20 @@ public class Main {
                 tui.mostrarLlibres(ctrl.obtenirTots());
                 break;
             case "2":
-                tui.mostrarMissatge("ISBN a cercar: ");
+                tui.mostrarMissatge("ISBN a trobar: ");
                 Llibre trobat = ctrl.buscarPerIsbn(tui.llegirLinia());
                 List<Llibre> resultat = new ArrayList<>();
                 if (trobat != null) resultat.add(trobat);
                 tui.mostrarLlibres(resultat);
                 break;
             case "3":
-                tui.mostrarMissatge("Títol (o part del títol) a cercar: ");
+                tui.mostrarMissatge("Títol   a trobar: ");
                 tui.mostrarLlibres(ctrl.buscarPerTitol(tui.llegirLinia()));
                 break;
             case "4":
                 break;
             default:
-                tui.mostrarMissatge("Opcio invalida.");
+                tui.mostrarMissatge("Opcion invalida.");
         }
     }
 
